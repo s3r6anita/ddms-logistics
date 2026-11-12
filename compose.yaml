@@ -1,0 +1,18 @@
+services:
+  postgis:
+    image: postgis/postgis:17-3.5
+    platform: linux/amd64
+    environment:
+      POSTGRES_DB: site_dss
+      POSTGRES_USER: site_dss
+      POSTGRES_PASSWORD: ${SITE_DSS_DB_PASSWORD:?Set SITE_DSS_DB_PASSWORD}
+    ports:
+      - "127.0.0.1:55439:5432"
+    volumes:
+      - site_dss_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U site_dss -d site_dss"]
+      interval: 3s
+      retries: 20
+volumes:
+  site_dss_pg:

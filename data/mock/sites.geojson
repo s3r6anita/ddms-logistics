@@ -1,0 +1,245 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              0
+            ],
+            [
+              0.002,
+              0
+            ],
+            [
+              0.002,
+              0.002
+            ],
+            [
+              0.0,
+              0.002
+            ],
+            [
+              0.0,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "site_id": "A",
+        "name": "Условная площадка A",
+        "crs": "EPSG:4326",
+        "legal_status": "confirmed",
+        "project_id": "A",
+        "evidence_ids": [
+          "site"
+        ],
+        "capex_rub": 650000000.0,
+        "launch_months": 14,
+        "expandable_fraction": 0.2,
+        "access_confirmed": true,
+        "utilities_sufficient": true,
+        "prohibiting_condition": false,
+        "power_available_kw": 1500,
+        "document_area_m2": 49236.288312481556
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.01,
+              0
+            ],
+            [
+              0.012,
+              0
+            ],
+            [
+              0.012,
+              0.002
+            ],
+            [
+              0.01,
+              0.002
+            ],
+            [
+              0.01,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "site_id": "B",
+        "name": "Условная площадка B",
+        "crs": "EPSG:4326",
+        "legal_status": "confirmed",
+        "project_id": "B",
+        "evidence_ids": [
+          "site"
+        ],
+        "capex_rub": 740000000.0,
+        "launch_months": 12,
+        "expandable_fraction": 0.4,
+        "access_confirmed": true,
+        "utilities_sufficient": true,
+        "prohibiting_condition": false,
+        "power_available_kw": 1500,
+        "document_area_m2": 49236.288312481556
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.02,
+              0
+            ],
+            [
+              0.022,
+              0
+            ],
+            [
+              0.022,
+              0.002
+            ],
+            [
+              0.02,
+              0.002
+            ],
+            [
+              0.02,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "site_id": "C",
+        "name": "Условная площадка C",
+        "crs": "EPSG:4326",
+        "legal_status": "confirmed",
+        "project_id": "C",
+        "evidence_ids": [
+          "site"
+        ],
+        "capex_rub": 950000000.0,
+        "launch_months": 12,
+        "expandable_fraction": 0.3,
+        "access_confirmed": true,
+        "utilities_sufficient": true,
+        "prohibiting_condition": false,
+        "power_available_kw": 1500,
+        "document_area_m2": 49236.288312481556
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.03,
+              0
+            ],
+            [
+              0.032,
+              0
+            ],
+            [
+              0.032,
+              0.002
+            ],
+            [
+              0.03,
+              0.002
+            ],
+            [
+              0.03,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "site_id": "D",
+        "name": "Условная площадка D",
+        "crs": "EPSG:4326",
+        "legal_status": "unknown",
+        "project_id": "D",
+        "evidence_ids": [
+          "site"
+        ],
+        "capex_rub": 620000000.0,
+        "launch_months": 16,
+        "expandable_fraction": 0.1,
+        "access_confirmed": true,
+        "utilities_sufficient": true,
+        "prohibiting_condition": false,
+        "power_available_kw": 1500,
+        "document_area_m2": 49236.288312481556
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.04,
+              0
+            ],
+            [
+              0.042,
+              0
+            ],
+            [
+              0.042,
+              0.002
+            ],
+            [
+              0.04,
+              0.002
+            ],
+            [
+              0.04,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "site_id": "E",
+        "name": "Условная площадка E",
+        "crs": "EPSG:4326",
+        "legal_status": "confirmed",
+        "project_id": "E",
+        "evidence_ids": [
+          "site"
+        ],
+        "capex_rub": 780000000.0,
+        "launch_months": 15,
+        "expandable_fraction": 0.25,
+        "access_confirmed": true,
+        "utilities_sufficient": true,
+        "prohibiting_condition": false,
+        "power_available_kw": 1500,
+        "document_area_m2": 49236.288312481556
+      }
+    }
+  ]
+}

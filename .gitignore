@@ -1,0 +1,71 @@
+# Local environments, caches and editor/OS files
+.venv*/
+venv/
+env/
+.superset-venv/
+node_modules
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.idea/
+*.iml
+.vscode/
+.DS_Store
+._*
+Thumbs.db
+~$*
+*.swp
+*.swo
+*.tmp
+
+# Credentials and local runtime state (Superset admin and metadata)
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+/.runtime/
+/.codex/
+/.agents/
+/data/processed/
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Build products and duplicated distribution archives
+/build/
+/dist/
+*.whl
+*.zip
+# Required Superset dashboard export is a submission artifact
+!/bi/superset_dashboard.zip
+
+# Artifact-authoring helpers tied to the Codex environment; not MVP dependencies
+/container_tools/
+/scripts/build_ahp.mjs
+/scripts/render_passport.py
+
+# Final submission artifacts; generated workbook previews stay local
+/outputs/
+/output/*
+!/output/AHP.xlsx
+!/output/pdf/
+/output/pdf/*
+!/output/pdf/Паспорт СППР.pdf
+
+# Private working documents and generated calculation outputs
+/local/
+/reports/
+
+# Diagnostic logs
+*.log

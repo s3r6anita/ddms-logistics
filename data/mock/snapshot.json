@@ -1,0 +1,2392 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-12",
+  "synthetic": true,
+  "evidence": [
+    {
+      "source_id": "site",
+      "source_kind": "synthetic",
+      "observed_at": "2026-11-01",
+      "valid_until": "2027-02-01",
+      "unit": "mixed",
+      "quality_status": "confirmed",
+      "evidence_uri": "mock://site-dss/v1/site",
+      "confirmed_by": "mock-generator"
+    },
+    {
+      "source_id": "demand",
+      "source_kind": "synthetic",
+      "observed_at": "2026-11-01",
+      "valid_until": "2027-02-01",
+      "unit": "pallet",
+      "quality_status": "confirmed",
+      "evidence_uri": "mock://site-dss/v1/demand",
+      "confirmed_by": "mock-generator"
+    },
+    {
+      "source_id": "route",
+      "source_kind": "synthetic",
+      "observed_at": "2026-11-01",
+      "valid_until": "2027-02-01",
+      "unit": "minute",
+      "quality_status": "confirmed",
+      "evidence_uri": "mock://site-dss/v1/route",
+      "confirmed_by": "mock-generator"
+    },
+    {
+      "source_id": "cost",
+      "source_kind": "synthetic",
+      "observed_at": "2026-11-01",
+      "valid_until": "2027-02-01",
+      "unit": "RUB",
+      "quality_status": "confirmed",
+      "evidence_uri": "mock://site-dss/v1/cost",
+      "confirmed_by": "mock-generator"
+    }
+  ],
+  "designs": [
+    {
+      "project_id": "A",
+      "storage_pallets": 20000,
+      "throughput_pallets_month": [
+        13333.333333333334,
+        13333.333333333334,
+        13333.333333333334,
+        13333.333333333334,
+        13333.333333333334,
+        13333.333333333334,
+        13333.333333333334,
+        13333.333333333334,
+        13333.333333333334,
+        13333.333333333334,
+        13333.333333333334,
+        13333.333333333334
+      ],
+      "power_required_kw": 1000
+    },
+    {
+      "project_id": "B",
+      "storage_pallets": 20000,
+      "throughput_pallets_month": [
+        15833.333333333334,
+        15833.333333333334,
+        15833.333333333334,
+        15833.333333333334,
+        15833.333333333334,
+        15833.333333333334,
+        15833.333333333334,
+        15833.333333333334,
+        15833.333333333334,
+        15833.333333333334,
+        15833.333333333334,
+        15833.333333333334
+      ],
+      "power_required_kw": 1000
+    },
+    {
+      "project_id": "C",
+      "storage_pallets": 20000,
+      "throughput_pallets_month": [
+        16666.666666666668,
+        16666.666666666668,
+        16666.666666666668,
+        16666.666666666668,
+        16666.666666666668,
+        16666.666666666668,
+        16666.666666666668,
+        16666.666666666668,
+        16666.666666666668,
+        16666.666666666668,
+        16666.666666666668,
+        16666.666666666668
+      ],
+      "power_required_kw": 1000
+    },
+    {
+      "project_id": "D",
+      "storage_pallets": 20000,
+      "throughput_pallets_month": [
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0
+      ],
+      "power_required_kw": 1000
+    },
+    {
+      "project_id": "E",
+      "storage_pallets": 20000,
+      "throughput_pallets_month": [
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0,
+        15000.0
+      ],
+      "power_required_kw": 1000
+    }
+  ],
+  "sites": [
+    {
+      "site_id": "A",
+      "name": "Условная площадка A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              0
+            ],
+            [
+              0.002,
+              0
+            ],
+            [
+              0.002,
+              0.002
+            ],
+            [
+              0.0,
+              0.002
+            ],
+            [
+              0.0,
+              0
+            ]
+          ]
+        ]
+      },
+      "crs": "EPSG:4326",
+      "legal_status": "confirmed",
+      "project_id": "A",
+      "evidence_ids": [
+        "site"
+      ],
+      "capex_rub": 650000000.0,
+      "launch_months": 14,
+      "expandable_fraction": 0.2,
+      "access_confirmed": true,
+      "utilities_sufficient": true,
+      "prohibiting_condition": false,
+      "power_available_kw": 1500,
+      "document_area_m2": 49236.288312481556
+    },
+    {
+      "site_id": "B",
+      "name": "Условная площадка B",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.01,
+              0
+            ],
+            [
+              0.012,
+              0
+            ],
+            [
+              0.012,
+              0.002
+            ],
+            [
+              0.01,
+              0.002
+            ],
+            [
+              0.01,
+              0
+            ]
+          ]
+        ]
+      },
+      "crs": "EPSG:4326",
+      "legal_status": "confirmed",
+      "project_id": "B",
+      "evidence_ids": [
+        "site"
+      ],
+      "capex_rub": 740000000.0,
+      "launch_months": 12,
+      "expandable_fraction": 0.4,
+      "access_confirmed": true,
+      "utilities_sufficient": true,
+      "prohibiting_condition": false,
+      "power_available_kw": 1500,
+      "document_area_m2": 49236.288312481556
+    },
+    {
+      "site_id": "C",
+      "name": "Условная площадка C",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.02,
+              0
+            ],
+            [
+              0.022,
+              0
+            ],
+            [
+              0.022,
+              0.002
+            ],
+            [
+              0.02,
+              0.002
+            ],
+            [
+              0.02,
+              0
+            ]
+          ]
+        ]
+      },
+      "crs": "EPSG:4326",
+      "legal_status": "confirmed",
+      "project_id": "C",
+      "evidence_ids": [
+        "site"
+      ],
+      "capex_rub": 950000000.0,
+      "launch_months": 12,
+      "expandable_fraction": 0.3,
+      "access_confirmed": true,
+      "utilities_sufficient": true,
+      "prohibiting_condition": false,
+      "power_available_kw": 1500,
+      "document_area_m2": 49236.288312481556
+    },
+    {
+      "site_id": "D",
+      "name": "Условная площадка D",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.03,
+              0
+            ],
+            [
+              0.032,
+              0
+            ],
+            [
+              0.032,
+              0.002
+            ],
+            [
+              0.03,
+              0.002
+            ],
+            [
+              0.03,
+              0
+            ]
+          ]
+        ]
+      },
+      "crs": "EPSG:4326",
+      "legal_status": "unknown",
+      "project_id": "D",
+      "evidence_ids": [
+        "site"
+      ],
+      "capex_rub": 620000000.0,
+      "launch_months": 16,
+      "expandable_fraction": 0.1,
+      "access_confirmed": true,
+      "utilities_sufficient": true,
+      "prohibiting_condition": false,
+      "power_available_kw": 1500,
+      "document_area_m2": 49236.288312481556
+    },
+    {
+      "site_id": "E",
+      "name": "Условная площадка E",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.04,
+              0
+            ],
+            [
+              0.042,
+              0
+            ],
+            [
+              0.042,
+              0.002
+            ],
+            [
+              0.04,
+              0.002
+            ],
+            [
+              0.04,
+              0
+            ]
+          ]
+        ]
+      },
+      "crs": "EPSG:4326",
+      "legal_status": "confirmed",
+      "project_id": "E",
+      "evidence_ids": [
+        "site"
+      ],
+      "capex_rub": 780000000.0,
+      "launch_months": 15,
+      "expandable_fraction": 0.25,
+      "access_confirmed": true,
+      "utilities_sufficient": true,
+      "prohibiting_condition": false,
+      "power_available_kw": 1500,
+      "document_area_m2": 49236.288312481556
+    }
+  ],
+  "zones": [
+    "Z1",
+    "Z2",
+    "Z3"
+  ],
+  "demand": [
+    {
+      "zone_id": "Z1",
+      "month": "2021-11-01",
+      "ordered_pallets": 3951.7,
+      "shipped_pallets": 3872.67,
+      "unfulfilled_pallets": 79.03,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2021-12-01",
+      "ordered_pallets": 4198.33,
+      "shipped_pallets": 4114.36,
+      "unfulfilled_pallets": 83.97,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2022-01-01",
+      "ordered_pallets": 4608.48,
+      "shipped_pallets": 4516.31,
+      "unfulfilled_pallets": 92.17,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2022-02-01",
+      "ordered_pallets": 4732.03,
+      "shipped_pallets": 4637.39,
+      "unfulfilled_pallets": 94.64,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2022-03-01",
+      "ordered_pallets": 4404.03,
+      "shipped_pallets": 4315.95,
+      "unfulfilled_pallets": 88.08,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2022-04-01",
+      "ordered_pallets": 4253.5,
+      "shipped_pallets": 4168.43,
+      "unfulfilled_pallets": 85.07,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2022-05-01",
+      "ordered_pallets": 4037.81,
+      "shipped_pallets": 3957.05,
+      "unfulfilled_pallets": 80.76,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2022-06-01",
+      "ordered_pallets": 3699.73,
+      "shipped_pallets": 3625.74,
+      "unfulfilled_pallets": 73.99,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2022-07-01",
+      "ordered_pallets": 3573.48,
+      "shipped_pallets": 3502.01,
+      "unfulfilled_pallets": 71.47,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2022-08-01",
+      "ordered_pallets": 3377.62,
+      "shipped_pallets": 3310.07,
+      "unfulfilled_pallets": 67.55,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2022-09-01",
+      "ordered_pallets": 3572.12,
+      "shipped_pallets": 3500.68,
+      "unfulfilled_pallets": 71.44,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2022-10-01",
+      "ordered_pallets": 3796.0,
+      "shipped_pallets": 3720.08,
+      "unfulfilled_pallets": 75.92,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2022-11-01",
+      "ordered_pallets": 4048.57,
+      "shipped_pallets": 3967.6,
+      "unfulfilled_pallets": 80.97,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2022-12-01",
+      "ordered_pallets": 4514.82,
+      "shipped_pallets": 4424.52,
+      "unfulfilled_pallets": 90.3,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2023-01-01",
+      "ordered_pallets": 4666.1,
+      "shipped_pallets": 4572.78,
+      "unfulfilled_pallets": 93.32,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2023-02-01",
+      "ordered_pallets": 4658.74,
+      "shipped_pallets": 4565.57,
+      "unfulfilled_pallets": 93.17,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2023-03-01",
+      "ordered_pallets": 4645.58,
+      "shipped_pallets": 4552.67,
+      "unfulfilled_pallets": 92.91,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2023-04-01",
+      "ordered_pallets": 4339.83,
+      "shipped_pallets": 4253.03,
+      "unfulfilled_pallets": 86.8,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2023-05-01",
+      "ordered_pallets": 4233.21,
+      "shipped_pallets": 4148.55,
+      "unfulfilled_pallets": 84.66,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2023-06-01",
+      "ordered_pallets": 3814.59,
+      "shipped_pallets": 3738.3,
+      "unfulfilled_pallets": 76.29,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2023-07-01",
+      "ordered_pallets": 3624.3,
+      "shipped_pallets": 3551.81,
+      "unfulfilled_pallets": 72.49,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2023-08-01",
+      "ordered_pallets": 3455.93,
+      "shipped_pallets": 3386.81,
+      "unfulfilled_pallets": 69.12,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2023-09-01",
+      "ordered_pallets": 3728.08,
+      "shipped_pallets": 3653.52,
+      "unfulfilled_pallets": 74.56,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2023-10-01",
+      "ordered_pallets": 3829.91,
+      "shipped_pallets": 3753.31,
+      "unfulfilled_pallets": 76.6,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2023-11-01",
+      "ordered_pallets": 4075.64,
+      "shipped_pallets": 3994.13,
+      "unfulfilled_pallets": 81.51,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2023-12-01",
+      "ordered_pallets": 4465.22,
+      "shipped_pallets": 4375.92,
+      "unfulfilled_pallets": 89.3,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2024-01-01",
+      "ordered_pallets": 4728.4,
+      "shipped_pallets": 4633.83,
+      "unfulfilled_pallets": 94.57,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2024-02-01",
+      "ordered_pallets": 4822.45,
+      "shipped_pallets": 4726.0,
+      "unfulfilled_pallets": 96.45,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2024-03-01",
+      "ordered_pallets": 4774.39,
+      "shipped_pallets": 4678.9,
+      "unfulfilled_pallets": 95.49,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2024-04-01",
+      "ordered_pallets": 4561.87,
+      "shipped_pallets": 4470.63,
+      "unfulfilled_pallets": 91.24,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2024-05-01",
+      "ordered_pallets": 4432.69,
+      "shipped_pallets": 4344.04,
+      "unfulfilled_pallets": 88.65,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2024-06-01",
+      "ordered_pallets": 3875.99,
+      "shipped_pallets": 3798.47,
+      "unfulfilled_pallets": 77.52,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2024-07-01",
+      "ordered_pallets": 3639.23,
+      "shipped_pallets": 3566.45,
+      "unfulfilled_pallets": 72.78,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2024-08-01",
+      "ordered_pallets": 3554.17,
+      "shipped_pallets": 3483.09,
+      "unfulfilled_pallets": 71.08,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2024-09-01",
+      "ordered_pallets": 3697.89,
+      "shipped_pallets": 3623.93,
+      "unfulfilled_pallets": 73.96,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2024-10-01",
+      "ordered_pallets": 3981.49,
+      "shipped_pallets": 3901.86,
+      "unfulfilled_pallets": 79.63,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2024-11-01",
+      "ordered_pallets": 4182.22,
+      "shipped_pallets": 4098.58,
+      "unfulfilled_pallets": 83.64,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2024-12-01",
+      "ordered_pallets": 4438.51,
+      "shipped_pallets": 4349.74,
+      "unfulfilled_pallets": 88.77,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2025-01-01",
+      "ordered_pallets": 4729.4,
+      "shipped_pallets": 4634.81,
+      "unfulfilled_pallets": 94.59,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2025-02-01",
+      "ordered_pallets": 4890.81,
+      "shipped_pallets": 4792.99,
+      "unfulfilled_pallets": 97.82,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2025-03-01",
+      "ordered_pallets": 4849.49,
+      "shipped_pallets": 4752.5,
+      "unfulfilled_pallets": 96.99,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2025-04-01",
+      "ordered_pallets": 4694.35,
+      "shipped_pallets": 4600.46,
+      "unfulfilled_pallets": 93.89,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2025-05-01",
+      "ordered_pallets": 4218.07,
+      "shipped_pallets": 4133.71,
+      "unfulfilled_pallets": 84.36,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2025-06-01",
+      "ordered_pallets": 4055.08,
+      "shipped_pallets": 3973.98,
+      "unfulfilled_pallets": 81.1,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2025-07-01",
+      "ordered_pallets": 3756.87,
+      "shipped_pallets": 3681.73,
+      "unfulfilled_pallets": 75.14,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2025-08-01",
+      "ordered_pallets": 3725.44,
+      "shipped_pallets": 3650.93,
+      "unfulfilled_pallets": 74.51,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2025-09-01",
+      "ordered_pallets": 3838.06,
+      "shipped_pallets": 3761.3,
+      "unfulfilled_pallets": 76.76,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2025-10-01",
+      "ordered_pallets": 4033.87,
+      "shipped_pallets": 3953.19,
+      "unfulfilled_pallets": 80.68,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2025-11-01",
+      "ordered_pallets": 4434.92,
+      "shipped_pallets": 4346.22,
+      "unfulfilled_pallets": 88.7,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2025-12-01",
+      "ordered_pallets": 4571.35,
+      "shipped_pallets": 4479.92,
+      "unfulfilled_pallets": 91.43,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2026-01-01",
+      "ordered_pallets": 4915.19,
+      "shipped_pallets": 4816.89,
+      "unfulfilled_pallets": 98.3,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2026-02-01",
+      "ordered_pallets": 5024.51,
+      "shipped_pallets": 4924.02,
+      "unfulfilled_pallets": 100.49,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2026-03-01",
+      "ordered_pallets": 4725.73,
+      "shipped_pallets": 4631.22,
+      "unfulfilled_pallets": 94.51,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2026-04-01",
+      "ordered_pallets": 4577.16,
+      "shipped_pallets": 4485.62,
+      "unfulfilled_pallets": 91.54,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2026-05-01",
+      "ordered_pallets": 4338.91,
+      "shipped_pallets": 4252.13,
+      "unfulfilled_pallets": 86.78,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2026-06-01",
+      "ordered_pallets": 4003.67,
+      "shipped_pallets": 3923.6,
+      "unfulfilled_pallets": 80.07,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2026-07-01",
+      "ordered_pallets": 3858.09,
+      "shipped_pallets": 3780.93,
+      "unfulfilled_pallets": 77.16,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2026-08-01",
+      "ordered_pallets": 3934.53,
+      "shipped_pallets": 3855.84,
+      "unfulfilled_pallets": 78.69,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2026-09-01",
+      "ordered_pallets": 3880.54,
+      "shipped_pallets": 3802.93,
+      "unfulfilled_pallets": 77.61,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z1",
+      "month": "2026-10-01",
+      "ordered_pallets": 4189.37,
+      "shipped_pallets": 4105.58,
+      "unfulfilled_pallets": 83.79,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2021-11-01",
+      "ordered_pallets": 3481.37,
+      "shipped_pallets": 3411.74,
+      "unfulfilled_pallets": 69.63,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2021-12-01",
+      "ordered_pallets": 3683.97,
+      "shipped_pallets": 3610.29,
+      "unfulfilled_pallets": 73.68,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2022-01-01",
+      "ordered_pallets": 4046.1,
+      "shipped_pallets": 3965.18,
+      "unfulfilled_pallets": 80.92,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2022-02-01",
+      "ordered_pallets": 4191.81,
+      "shipped_pallets": 4107.97,
+      "unfulfilled_pallets": 83.84,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2022-03-01",
+      "ordered_pallets": 3844.65,
+      "shipped_pallets": 3767.76,
+      "unfulfilled_pallets": 76.89,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2022-04-01",
+      "ordered_pallets": 3696.36,
+      "shipped_pallets": 3622.43,
+      "unfulfilled_pallets": 73.93,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2022-05-01",
+      "ordered_pallets": 3619.35,
+      "shipped_pallets": 3546.96,
+      "unfulfilled_pallets": 72.39,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2022-06-01",
+      "ordered_pallets": 3204.54,
+      "shipped_pallets": 3140.45,
+      "unfulfilled_pallets": 64.09,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2022-07-01",
+      "ordered_pallets": 3071.04,
+      "shipped_pallets": 3009.62,
+      "unfulfilled_pallets": 61.42,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2022-08-01",
+      "ordered_pallets": 2919.53,
+      "shipped_pallets": 2861.14,
+      "unfulfilled_pallets": 58.39,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2022-09-01",
+      "ordered_pallets": 3176.94,
+      "shipped_pallets": 3113.4,
+      "unfulfilled_pallets": 63.54,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2022-10-01",
+      "ordered_pallets": 3322.55,
+      "shipped_pallets": 3256.1,
+      "unfulfilled_pallets": 66.45,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2022-11-01",
+      "ordered_pallets": 3618.52,
+      "shipped_pallets": 3546.15,
+      "unfulfilled_pallets": 72.37,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2022-12-01",
+      "ordered_pallets": 3944.95,
+      "shipped_pallets": 3866.05,
+      "unfulfilled_pallets": 78.9,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2023-01-01",
+      "ordered_pallets": 4028.55,
+      "shipped_pallets": 3947.98,
+      "unfulfilled_pallets": 80.57,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2023-02-01",
+      "ordered_pallets": 4006.96,
+      "shipped_pallets": 3926.82,
+      "unfulfilled_pallets": 80.14,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2023-03-01",
+      "ordered_pallets": 4113.96,
+      "shipped_pallets": 4031.68,
+      "unfulfilled_pallets": 82.28,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2023-04-01",
+      "ordered_pallets": 3832.92,
+      "shipped_pallets": 3756.26,
+      "unfulfilled_pallets": 76.66,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2023-05-01",
+      "ordered_pallets": 3794.91,
+      "shipped_pallets": 3719.01,
+      "unfulfilled_pallets": 75.9,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2023-06-01",
+      "ordered_pallets": 3497.13,
+      "shipped_pallets": 3427.19,
+      "unfulfilled_pallets": 69.94,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2023-07-01",
+      "ordered_pallets": 3187.35,
+      "shipped_pallets": 3123.6,
+      "unfulfilled_pallets": 63.75,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2023-08-01",
+      "ordered_pallets": 3016.19,
+      "shipped_pallets": 2955.87,
+      "unfulfilled_pallets": 60.32,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2023-09-01",
+      "ordered_pallets": 3213.42,
+      "shipped_pallets": 3149.15,
+      "unfulfilled_pallets": 64.27,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2023-10-01",
+      "ordered_pallets": 3396.64,
+      "shipped_pallets": 3328.71,
+      "unfulfilled_pallets": 67.93,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2023-11-01",
+      "ordered_pallets": 3592.87,
+      "shipped_pallets": 3521.01,
+      "unfulfilled_pallets": 71.86,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2023-12-01",
+      "ordered_pallets": 3887.12,
+      "shipped_pallets": 3809.38,
+      "unfulfilled_pallets": 77.74,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2024-01-01",
+      "ordered_pallets": 4157.03,
+      "shipped_pallets": 4073.89,
+      "unfulfilled_pallets": 83.14,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2024-02-01",
+      "ordered_pallets": 4240.55,
+      "shipped_pallets": 4155.74,
+      "unfulfilled_pallets": 84.81,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2024-03-01",
+      "ordered_pallets": 4235.78,
+      "shipped_pallets": 4151.06,
+      "unfulfilled_pallets": 84.72,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2024-04-01",
+      "ordered_pallets": 4011.34,
+      "shipped_pallets": 3931.11,
+      "unfulfilled_pallets": 80.23,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2024-05-01",
+      "ordered_pallets": 3895.61,
+      "shipped_pallets": 3817.7,
+      "unfulfilled_pallets": 77.91,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2024-06-01",
+      "ordered_pallets": 3371.32,
+      "shipped_pallets": 3303.89,
+      "unfulfilled_pallets": 67.43,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2024-07-01",
+      "ordered_pallets": 3147.87,
+      "shipped_pallets": 3084.91,
+      "unfulfilled_pallets": 62.96,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2024-08-01",
+      "ordered_pallets": 3110.88,
+      "shipped_pallets": 3048.66,
+      "unfulfilled_pallets": 62.22,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2024-09-01",
+      "ordered_pallets": 3336.35,
+      "shipped_pallets": 3269.62,
+      "unfulfilled_pallets": 66.73,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2024-10-01",
+      "ordered_pallets": 3663.66,
+      "shipped_pallets": 3590.39,
+      "unfulfilled_pallets": 73.27,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2024-11-01",
+      "ordered_pallets": 3747.61,
+      "shipped_pallets": 3672.66,
+      "unfulfilled_pallets": 74.95,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2024-12-01",
+      "ordered_pallets": 3990.11,
+      "shipped_pallets": 3910.31,
+      "unfulfilled_pallets": 79.8,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2025-01-01",
+      "ordered_pallets": 4123.99,
+      "shipped_pallets": 4041.51,
+      "unfulfilled_pallets": 82.48,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2025-02-01",
+      "ordered_pallets": 4303.23,
+      "shipped_pallets": 4217.17,
+      "unfulfilled_pallets": 86.06,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2025-03-01",
+      "ordered_pallets": 4258.13,
+      "shipped_pallets": 4172.97,
+      "unfulfilled_pallets": 85.16,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2025-04-01",
+      "ordered_pallets": 4065.75,
+      "shipped_pallets": 3984.43,
+      "unfulfilled_pallets": 81.32,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2025-05-01",
+      "ordered_pallets": 3829.89,
+      "shipped_pallets": 3753.29,
+      "unfulfilled_pallets": 76.6,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2025-06-01",
+      "ordered_pallets": 3522.43,
+      "shipped_pallets": 3451.98,
+      "unfulfilled_pallets": 70.45,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2025-07-01",
+      "ordered_pallets": 3401.57,
+      "shipped_pallets": 3333.54,
+      "unfulfilled_pallets": 68.03,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2025-08-01",
+      "ordered_pallets": 3269.05,
+      "shipped_pallets": 3203.67,
+      "unfulfilled_pallets": 65.38,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2025-09-01",
+      "ordered_pallets": 3487.69,
+      "shipped_pallets": 3417.94,
+      "unfulfilled_pallets": 69.75,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2025-10-01",
+      "ordered_pallets": 3603.95,
+      "shipped_pallets": 3531.87,
+      "unfulfilled_pallets": 72.08,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2025-11-01",
+      "ordered_pallets": 3890.05,
+      "shipped_pallets": 3812.25,
+      "unfulfilled_pallets": 77.8,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2025-12-01",
+      "ordered_pallets": 4109.75,
+      "shipped_pallets": 4027.55,
+      "unfulfilled_pallets": 82.2,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2026-01-01",
+      "ordered_pallets": 4301.22,
+      "shipped_pallets": 4215.2,
+      "unfulfilled_pallets": 86.02,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2026-02-01",
+      "ordered_pallets": 4458.89,
+      "shipped_pallets": 4369.71,
+      "unfulfilled_pallets": 89.18,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2026-03-01",
+      "ordered_pallets": 4167.05,
+      "shipped_pallets": 4083.71,
+      "unfulfilled_pallets": 83.34,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2026-04-01",
+      "ordered_pallets": 4049.58,
+      "shipped_pallets": 3968.59,
+      "unfulfilled_pallets": 80.99,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2026-05-01",
+      "ordered_pallets": 3778.16,
+      "shipped_pallets": 3702.6,
+      "unfulfilled_pallets": 75.56,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2026-06-01",
+      "ordered_pallets": 3572.77,
+      "shipped_pallets": 3501.31,
+      "unfulfilled_pallets": 71.46,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2026-07-01",
+      "ordered_pallets": 3483.63,
+      "shipped_pallets": 3413.96,
+      "unfulfilled_pallets": 69.67,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2026-08-01",
+      "ordered_pallets": 3515.74,
+      "shipped_pallets": 3445.43,
+      "unfulfilled_pallets": 70.31,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2026-09-01",
+      "ordered_pallets": 3368.07,
+      "shipped_pallets": 3300.71,
+      "unfulfilled_pallets": 67.36,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z2",
+      "month": "2026-10-01",
+      "ordered_pallets": 3750.51,
+      "shipped_pallets": 3675.5,
+      "unfulfilled_pallets": 75.01,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2021-11-01",
+      "ordered_pallets": 2586.19,
+      "shipped_pallets": 2534.47,
+      "unfulfilled_pallets": 51.72,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2021-12-01",
+      "ordered_pallets": 2610.77,
+      "shipped_pallets": 2558.55,
+      "unfulfilled_pallets": 52.22,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2022-01-01",
+      "ordered_pallets": 2887.81,
+      "shipped_pallets": 2830.05,
+      "unfulfilled_pallets": 57.76,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2022-02-01",
+      "ordered_pallets": 3030.43,
+      "shipped_pallets": 2969.82,
+      "unfulfilled_pallets": 60.61,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2022-03-01",
+      "ordered_pallets": 2696.46,
+      "shipped_pallets": 2642.53,
+      "unfulfilled_pallets": 53.93,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2022-04-01",
+      "ordered_pallets": 2674.41,
+      "shipped_pallets": 2620.92,
+      "unfulfilled_pallets": 53.49,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2022-05-01",
+      "ordered_pallets": 2561.75,
+      "shipped_pallets": 2510.51,
+      "unfulfilled_pallets": 51.24,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2022-06-01",
+      "ordered_pallets": 2277.94,
+      "shipped_pallets": 2232.38,
+      "unfulfilled_pallets": 45.56,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2022-07-01",
+      "ordered_pallets": 2168.16,
+      "shipped_pallets": 2124.8,
+      "unfulfilled_pallets": 43.36,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2022-08-01",
+      "ordered_pallets": 2185.52,
+      "shipped_pallets": 2141.81,
+      "unfulfilled_pallets": 43.71,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2022-09-01",
+      "ordered_pallets": 2401.95,
+      "shipped_pallets": 2353.91,
+      "unfulfilled_pallets": 48.04,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2022-10-01",
+      "ordered_pallets": 2451.42,
+      "shipped_pallets": 2402.39,
+      "unfulfilled_pallets": 49.03,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2022-11-01",
+      "ordered_pallets": 2572.7,
+      "shipped_pallets": 2521.25,
+      "unfulfilled_pallets": 51.45,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2022-12-01",
+      "ordered_pallets": 2945.72,
+      "shipped_pallets": 2886.81,
+      "unfulfilled_pallets": 58.91,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2023-01-01",
+      "ordered_pallets": 2915.02,
+      "shipped_pallets": 2856.72,
+      "unfulfilled_pallets": 58.3,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2023-02-01",
+      "ordered_pallets": 2862.4,
+      "shipped_pallets": 2805.15,
+      "unfulfilled_pallets": 57.25,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2023-03-01",
+      "ordered_pallets": 2998.9,
+      "shipped_pallets": 2938.92,
+      "unfulfilled_pallets": 59.98,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2023-04-01",
+      "ordered_pallets": 2702.44,
+      "shipped_pallets": 2648.39,
+      "unfulfilled_pallets": 54.05,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2023-05-01",
+      "ordered_pallets": 2704.83,
+      "shipped_pallets": 2650.73,
+      "unfulfilled_pallets": 54.1,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2023-06-01",
+      "ordered_pallets": 2433.65,
+      "shipped_pallets": 2384.98,
+      "unfulfilled_pallets": 48.67,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2023-07-01",
+      "ordered_pallets": 2313.79,
+      "shipped_pallets": 2267.51,
+      "unfulfilled_pallets": 46.28,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2023-08-01",
+      "ordered_pallets": 2274.05,
+      "shipped_pallets": 2228.57,
+      "unfulfilled_pallets": 45.48,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2023-09-01",
+      "ordered_pallets": 2443.35,
+      "shipped_pallets": 2394.48,
+      "unfulfilled_pallets": 48.87,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2023-10-01",
+      "ordered_pallets": 2488.57,
+      "shipped_pallets": 2438.8,
+      "unfulfilled_pallets": 49.77,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2023-11-01",
+      "ordered_pallets": 2537.19,
+      "shipped_pallets": 2486.45,
+      "unfulfilled_pallets": 50.74,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2023-12-01",
+      "ordered_pallets": 2828.62,
+      "shipped_pallets": 2772.05,
+      "unfulfilled_pallets": 56.57,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2024-01-01",
+      "ordered_pallets": 3016.72,
+      "shipped_pallets": 2956.39,
+      "unfulfilled_pallets": 60.33,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2024-02-01",
+      "ordered_pallets": 3042.04,
+      "shipped_pallets": 2981.2,
+      "unfulfilled_pallets": 60.84,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2024-03-01",
+      "ordered_pallets": 3018.39,
+      "shipped_pallets": 2958.02,
+      "unfulfilled_pallets": 60.37,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2024-04-01",
+      "ordered_pallets": 2914.24,
+      "shipped_pallets": 2855.96,
+      "unfulfilled_pallets": 58.28,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2024-05-01",
+      "ordered_pallets": 2943.96,
+      "shipped_pallets": 2885.08,
+      "unfulfilled_pallets": 58.88,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2024-06-01",
+      "ordered_pallets": 2433.23,
+      "shipped_pallets": 2384.57,
+      "unfulfilled_pallets": 48.66,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2024-07-01",
+      "ordered_pallets": 2354.52,
+      "shipped_pallets": 2307.43,
+      "unfulfilled_pallets": 47.09,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2024-08-01",
+      "ordered_pallets": 2260.97,
+      "shipped_pallets": 2215.75,
+      "unfulfilled_pallets": 45.22,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2024-09-01",
+      "ordered_pallets": 2453.93,
+      "shipped_pallets": 2404.85,
+      "unfulfilled_pallets": 49.08,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2024-10-01",
+      "ordered_pallets": 2704.23,
+      "shipped_pallets": 2650.15,
+      "unfulfilled_pallets": 54.08,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2024-11-01",
+      "ordered_pallets": 2765.96,
+      "shipped_pallets": 2710.64,
+      "unfulfilled_pallets": 55.32,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2024-12-01",
+      "ordered_pallets": 2931.07,
+      "shipped_pallets": 2872.45,
+      "unfulfilled_pallets": 58.62,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2025-01-01",
+      "ordered_pallets": 3009.6,
+      "shipped_pallets": 2949.41,
+      "unfulfilled_pallets": 60.19,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2025-02-01",
+      "ordered_pallets": 3175.24,
+      "shipped_pallets": 3111.74,
+      "unfulfilled_pallets": 63.5,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2025-03-01",
+      "ordered_pallets": 3161.58,
+      "shipped_pallets": 3098.35,
+      "unfulfilled_pallets": 63.23,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2025-04-01",
+      "ordered_pallets": 3034.3,
+      "shipped_pallets": 2973.61,
+      "unfulfilled_pallets": 60.69,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2025-05-01",
+      "ordered_pallets": 2742.05,
+      "shipped_pallets": 2687.21,
+      "unfulfilled_pallets": 54.84,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2025-06-01",
+      "ordered_pallets": 2585.6,
+      "shipped_pallets": 2533.89,
+      "unfulfilled_pallets": 51.71,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2025-07-01",
+      "ordered_pallets": 2497.81,
+      "shipped_pallets": 2447.85,
+      "unfulfilled_pallets": 49.96,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2025-08-01",
+      "ordered_pallets": 2469.95,
+      "shipped_pallets": 2420.55,
+      "unfulfilled_pallets": 49.4,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2025-09-01",
+      "ordered_pallets": 2688.96,
+      "shipped_pallets": 2635.18,
+      "unfulfilled_pallets": 53.78,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2025-10-01",
+      "ordered_pallets": 2746.08,
+      "shipped_pallets": 2691.16,
+      "unfulfilled_pallets": 54.92,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2025-11-01",
+      "ordered_pallets": 2858.71,
+      "shipped_pallets": 2801.54,
+      "unfulfilled_pallets": 57.17,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2025-12-01",
+      "ordered_pallets": 3023.65,
+      "shipped_pallets": 2963.18,
+      "unfulfilled_pallets": 60.47,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2026-01-01",
+      "ordered_pallets": 3134.93,
+      "shipped_pallets": 3072.23,
+      "unfulfilled_pallets": 62.7,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2026-02-01",
+      "ordered_pallets": 3262.23,
+      "shipped_pallets": 3196.99,
+      "unfulfilled_pallets": 65.24,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2026-03-01",
+      "ordered_pallets": 3071.82,
+      "shipped_pallets": 3010.38,
+      "unfulfilled_pallets": 61.44,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2026-04-01",
+      "ordered_pallets": 3083.99,
+      "shipped_pallets": 3022.31,
+      "unfulfilled_pallets": 61.68,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2026-05-01",
+      "ordered_pallets": 2802.86,
+      "shipped_pallets": 2746.8,
+      "unfulfilled_pallets": 56.06,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2026-06-01",
+      "ordered_pallets": 2610.56,
+      "shipped_pallets": 2558.35,
+      "unfulfilled_pallets": 52.21,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2026-07-01",
+      "ordered_pallets": 2445.85,
+      "shipped_pallets": 2396.93,
+      "unfulfilled_pallets": 48.92,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2026-08-01",
+      "ordered_pallets": 2651.22,
+      "shipped_pallets": 2598.2,
+      "unfulfilled_pallets": 53.02,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2026-09-01",
+      "ordered_pallets": 2455.51,
+      "shipped_pallets": 2406.4,
+      "unfulfilled_pallets": 49.11,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    },
+    {
+      "zone_id": "Z3",
+      "month": "2026-10-01",
+      "ordered_pallets": 2788.82,
+      "shipped_pallets": 2733.04,
+      "unfulfilled_pallets": 55.78,
+      "evidence_id": "demand",
+      "unit": "pallet"
+    }
+  ],
+  "routes": [
+    {
+      "site_id": "A",
+      "zone_id": "Z1",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 70,
+      "km": 30,
+      "variable_cost_rub_pallet": 200,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "A",
+      "zone_id": "Z1",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 45,
+      "km": 30,
+      "variable_cost_rub_pallet": 200,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "A",
+      "zone_id": "Z2",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 80,
+      "km": 37,
+      "variable_cost_rub_pallet": 215,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "A",
+      "zone_id": "Z2",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 55,
+      "km": 37,
+      "variable_cost_rub_pallet": 215,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "A",
+      "zone_id": "Z3",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 90,
+      "km": 44,
+      "variable_cost_rub_pallet": 230,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "A",
+      "zone_id": "Z3",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 65,
+      "km": 44,
+      "variable_cost_rub_pallet": 230,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "B",
+      "zone_id": "Z1",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 79,
+      "km": 35,
+      "variable_cost_rub_pallet": 210,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "B",
+      "zone_id": "Z1",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 54,
+      "km": 35,
+      "variable_cost_rub_pallet": 210,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "B",
+      "zone_id": "Z2",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 89,
+      "km": 42,
+      "variable_cost_rub_pallet": 225,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "B",
+      "zone_id": "Z2",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 64,
+      "km": 42,
+      "variable_cost_rub_pallet": 225,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "B",
+      "zone_id": "Z3",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 99,
+      "km": 49,
+      "variable_cost_rub_pallet": 240,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "B",
+      "zone_id": "Z3",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 74,
+      "km": 49,
+      "variable_cost_rub_pallet": 240,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "C",
+      "zone_id": "Z1",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 88,
+      "km": 40,
+      "variable_cost_rub_pallet": 220,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "C",
+      "zone_id": "Z1",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 63,
+      "km": 40,
+      "variable_cost_rub_pallet": 220,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "C",
+      "zone_id": "Z2",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 98,
+      "km": 47,
+      "variable_cost_rub_pallet": 235,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "C",
+      "zone_id": "Z2",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 73,
+      "km": 47,
+      "variable_cost_rub_pallet": 235,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "C",
+      "zone_id": "Z3",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 108,
+      "km": 54,
+      "variable_cost_rub_pallet": 250,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "C",
+      "zone_id": "Z3",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 83,
+      "km": 54,
+      "variable_cost_rub_pallet": 250,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "D",
+      "zone_id": "Z1",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 97,
+      "km": 45,
+      "variable_cost_rub_pallet": 230,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "D",
+      "zone_id": "Z1",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 72,
+      "km": 45,
+      "variable_cost_rub_pallet": 230,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "D",
+      "zone_id": "Z2",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 107,
+      "km": 52,
+      "variable_cost_rub_pallet": 245,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "D",
+      "zone_id": "Z2",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 82,
+      "km": 52,
+      "variable_cost_rub_pallet": 245,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "D",
+      "zone_id": "Z3",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 117,
+      "km": 59,
+      "variable_cost_rub_pallet": 260,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "D",
+      "zone_id": "Z3",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 92,
+      "km": 59,
+      "variable_cost_rub_pallet": 260,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "E",
+      "zone_id": "Z1",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 106,
+      "km": 50,
+      "variable_cost_rub_pallet": 240,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "E",
+      "zone_id": "Z1",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 81,
+      "km": 50,
+      "variable_cost_rub_pallet": 240,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "E",
+      "zone_id": "Z2",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 116,
+      "km": 57,
+      "variable_cost_rub_pallet": 255,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "E",
+      "zone_id": "Z2",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 91,
+      "km": 57,
+      "variable_cost_rub_pallet": 255,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "E",
+      "zone_id": "Z3",
+      "period": "peak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 126,
+      "km": 64,
+      "variable_cost_rub_pallet": 270,
+      "evidence_id": "route"
+    },
+    {
+      "site_id": "E",
+      "zone_id": "Z3",
+      "period": "offpeak",
+      "vehicle_profile": "truck_20t",
+      "reachable": true,
+      "minutes": 101,
+      "km": 64,
+      "variable_cost_rub_pallet": 270,
+      "evidence_id": "route"
+    }
+  ],
+  "costs": [
+    {
+      "site_id": "A",
+      "category": "capex_total",
+      "cashflow_date": "2026-11-01",
+      "amount": 650000000.0,
+      "currency": "RUB",
+      "price_date": "2026-11-01",
+      "vat_policy": "excluded",
+      "real_or_nominal": "real",
+      "scenario_id": "base",
+      "evidence_id": "cost"
+    },
+    {
+      "site_id": "B",
+      "category": "capex_total",
+      "cashflow_date": "2026-11-01",
+      "amount": 740000000.0,
+      "currency": "RUB",
+      "price_date": "2026-11-01",
+      "vat_policy": "excluded",
+      "real_or_nominal": "real",
+      "scenario_id": "base",
+      "evidence_id": "cost"
+    },
+    {
+      "site_id": "C",
+      "category": "capex_total",
+      "cashflow_date": "2026-11-01",
+      "amount": 950000000.0,
+      "currency": "RUB",
+      "price_date": "2026-11-01",
+      "vat_policy": "excluded",
+      "real_or_nominal": "real",
+      "scenario_id": "base",
+      "evidence_id": "cost"
+    },
+    {
+      "site_id": "D",
+      "category": "capex_total",
+      "cashflow_date": "2026-11-01",
+      "amount": 620000000.0,
+      "currency": "RUB",
+      "price_date": "2026-11-01",
+      "vat_policy": "excluded",
+      "real_or_nominal": "real",
+      "scenario_id": "base",
+      "evidence_id": "cost"
+    },
+    {
+      "site_id": "E",
+      "category": "capex_total",
+      "cashflow_date": "2026-11-01",
+      "amount": 780000000.0,
+      "currency": "RUB",
+      "price_date": "2026-11-01",
+      "vat_policy": "excluded",
+      "real_or_nominal": "real",
+      "scenario_id": "base",
+      "evidence_id": "cost"
+    }
+  ]
+}

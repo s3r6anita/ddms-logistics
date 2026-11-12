@@ -1,0 +1,15 @@
+{
+  "synthetic": true,
+  "source_id": "mock://site-dss/finance/v1",
+  "price_date": "2026-11-01",
+  "currency": "RUB",
+  "prices": "real",
+  "vat_policy": "excluded",
+  "sites": {
+    "A": {"fixed_opex_rub_year": 54000000, "dwell_days": 10, "unserved_loss_rub_pallet": 3000, "waiting_cost_rub_month": 1000000, "residual_value_rub": 0},
+    "B": {"fixed_opex_rub_year": 38000000, "dwell_days": 10, "unserved_loss_rub_pallet": 3000, "waiting_cost_rub_month": 1000000, "residual_value_rub": 0},
+    "C": {"fixed_opex_rub_year": 35000000, "dwell_days": 10, "unserved_loss_rub_pallet": 3000, "waiting_cost_rub_month": 1000000, "residual_value_rub": 0},
+    "D": {"fixed_opex_rub_year": 50000000, "dwell_days": 10, "unserved_loss_rub_pallet": 3000, "waiting_cost_rub_month": 1000000, "residual_value_rub": 0},
+    "E": {"fixed_opex_rub_year": 46000000, "dwell_days": 10, "unserved_loss_rub_pallet": 3000, "waiting_cost_rub_month": 1000000, "residual_value_rub": 0}
+  }
+}
